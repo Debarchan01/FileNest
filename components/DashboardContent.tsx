@@ -45,16 +45,16 @@ export default function DashboardContent({
   return (
     <>
       <div className="mb-8">
-        <h2 className="text-4xl font-bold text-default-900">
+        <h2 className="text-4xl font-bold text-slate-800">
           Hi,{" "}
-          <span className="text-primary">
+          <span className="text-violet-600">
             {userName?.length > 10
               ? `${userName?.substring(0, 10)}...`
               : userName?.split(" ")[0] || "there"}
           </span>
           !
         </h2>
-        <p className="text-default-600 mt-2 text-lg">
+        <p className="text-slate-600 mt-2 text-lg">
           Your images are waiting for you.
         </p>
       </div>
@@ -68,7 +68,7 @@ export default function DashboardContent({
         classNames={{
           tabList: "gap-6",
           tab: "py-3",
-          cursor: "bg-primary",
+          cursor: "bg-violet-600",
         }}
       >
         <Tab
@@ -82,10 +82,10 @@ export default function DashboardContent({
         >
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-1">
-              <Card className="border border-default-200 bg-default-50 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="border border-violet-200 bg-white/50 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="flex gap-3">
-                  <FileUp className="h-5 w-5 text-primary" />
-                  <h2 className="text-xl font-semibold">Upload</h2>
+                  <FileUp className="h-5 w-5 text-violet-600" />
+                  <h2 className="text-xl font-semibold text-slate-800">Upload</h2>
                 </CardHeader>
                 <CardBody>
                   <FileUploadForm
@@ -98,10 +98,10 @@ export default function DashboardContent({
             </div>
 
             <div className="lg:col-span-2">
-              <Card className="border border-default-200 bg-default-50 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="border border-violet-200 bg-white/50 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="flex gap-3">
-                  <FileText className="h-5 w-5 text-primary" />
-                  <h2 className="text-xl font-semibold">Your Files</h2>
+                  <FileText className="h-5 w-5 text-violet-600" />
+                  <h2 className="text-xl font-semibold text-slate-800">Your Files</h2>
                 </CardHeader>
                 <CardBody>
                   <FileList

@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 
 export default function SignInPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-violet-50 to-violet-100">
       {/* Use the unified Navbar component */}
       <Navbar />
 
@@ -13,10 +13,10 @@ export default function SignInPage() {
         <SignInForm />
       </main>
 
-      {/* Dark mode footer */}
-      <footer className="bg-gray-900 text-white py-4">
+      {/* Footer with purple theme */}
+      <footer className="bg-violet-50 border-t border-violet-200 py-4">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-slate-600">
             &copy; {new Date().getFullYear()} FileNest. All rights reserved.
           </p>
         </div>
